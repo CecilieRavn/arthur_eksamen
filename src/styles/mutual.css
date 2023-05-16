@@ -28,3 +28,12 @@ img {
     display: block;
 }
 
+@font-face {
+    font-family: "Overskrift";
+    src: url(/public/Nunito-Regular.woff2);
+}
+
+@font-face {
+    font-family: "Tekst";
+    src: url(/public/Nunito-Light.woff2);
+}
