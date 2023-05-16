@@ -1,0 +1,30 @@
+:root {
+    --brand-color: #131313;
+    --secondary: #f9f9f9;
+    --tertiary: #EBEBEB;
+    --space-sm: 10px;
+    --space-md: 20px;
+    --space-lg: 30px;
+    --space-xl: 40px;
+    --space-xxl: 50px;
+    --font-xxs: 20px;
+    --font-xs: 22px;
+    --font-sm: 25px;
+    --font-md: 30pc;
+    --font-lg: 40px;
+    --font-regular: 400px;
+    --fony-medium: 500px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
