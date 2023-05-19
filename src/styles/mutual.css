@@ -1,39 +1,43 @@
 :root {
-    --brand-color: #131313;
-    --secondary: #f9f9f9;
-    --tertiary: #EBEBEB;
-    --space-sm: 10px;
-    --space-md: 20px;
-    --space-lg: 30px;
-    --space-xl: 40px;
-    --space-xxl: 50px;
-    --font-xxs: 20px;
-    --font-xs: 22px;
-    --font-sm: 25px;
-    --font-md: 30pc;
-    --font-lg: 40px;
-    --font-regular: 400px;
-    --fony-medium: 500px;
+  --brand-color: #131313;
+  --secondary: #f9f9f9;
+  --tertiary: #ebebeb;
+  --space-sm: 10px;
+  --space-md: 20px;
+  --space-lg: 30px;
+  --space-xl: 40px;
+  --space-xxl: 50px;
+  --font-xxs: 20px;
+  --font-xs: 22px;
+  --font-sm: 25px;
+  --font-md: 30pc;
+  --font-lg: 40px;
+  --font-regular: 400px;
+  --fony-medium: 500px;
 }
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 img {
-    width: 100%;
-    height: auto;
-    display: block;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 @font-face {
-    font-family: "Overskrift";
-    src: url(/public/Nunito-Regular.woff2);
+  font-family: "Overskrift";
+  src: url(/public/Nunito-Regular.woff2);
 }
 
 @font-face {
-    font-family: "Tekst";
-    src: url(/public/Nunito-Light.woff2);
+  font-family: "Tekst";
+  src: url(/public/Nunito-Light.woff2);
+}
+
+body {
+  background-color: black;
 }
