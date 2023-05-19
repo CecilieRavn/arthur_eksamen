@@ -6,11 +6,10 @@ import Header2 from "../components/Header2.astro";
 <Header2/>
 <section class="grid_1-1">
     <div>
-        <h2>Contact me</h2>
         <div class="container">
             <img src="public/test.png" alt="Portrait of Arthur">
-            <div class="centeret">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, rem error velit, voluptatum mollitia animi at dolorum ipsam sunt inventore architecto! Ab, hic voluptate illum voluptates deserunt sint fugit facilis! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis minus voluptas sunt eaque commodi rerum maxime tempora sapiente nisi. Odit quis similique repudiandae impedit laudantium sequi voluptates nobis nesciunt provident.</p>
+            <div class="overlay">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, rem error velit, voluptatum mollitia animi at dolorum ipsam sunt inventore architecto! Ab, hic voluptate illum voluptates deserunt sint fugit facilis! Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
             </div>
         </div>
     </div>
@@ -18,20 +17,32 @@ import Header2 from "../components/Header2.astro";
 </section>
 
 <style>
-    .grid_1-1 {
+.grid_1-1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 
 img {
-   width: 80%;
+   width: 100%;
    opacity: 70%;
    
 }
 
-p {
-    max-width: 350px;
-    border: solid 3px;
-    padding: 10px;
+.container {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 </style>
