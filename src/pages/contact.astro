@@ -3,18 +3,20 @@ import "../styles/mutual.css";
 import Form from "../components/Form.astro";
 import Header2 from "../components/Header2.astro";
 ---
-<Header2/>
-<section class="grid_1-1">
-    <div>
-        <div class="container">
-            <img src="public/outside-2.webp" alt="Portrait of Arthur">
-            <div class="overlay">
-                <p>"Fascinated by people"</p>
+<body>
+    <Header2/>
+    <section class="grid_1-1">
+        <div>
+            <div class="container">
+                <img src="public/outside-2.webp" alt="Portrait of Arthur">
+                <div class="overlay">
+                    <p>"Fascinated by people"</p>
+                </div>
             </div>
         </div>
-    </div>
-    <Form/>
-</section>
+        <Form/>
+    </section>
+</body>
 
 <style>
 .grid_1-1 {
@@ -25,7 +27,7 @@ import Header2 from "../components/Header2.astro";
 img {
    width: 100%;
    opacity: 70%;
-   
+   overflow: clip;
 }
 
 .container {
