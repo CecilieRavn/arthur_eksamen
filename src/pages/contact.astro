@@ -1,6 +1,5 @@
 ---
 import "../styles/mutual.css";
-import "../styles/contact.css";
 import Form from "../components/Form.astro";
 import Header2 from "../components/Header2.astro";
 ---
@@ -8,8 +7,31 @@ import Header2 from "../components/Header2.astro";
 <section class="grid_1-1">
     <div>
         <h2>Contact me</h2>
-        <img src="public/portrættest.jpeg" alt="Portrait of Arthur">
-        <p></p>
+        <div class="container">
+            <img src="public/test.png" alt="Portrait of Arthur">
+            <div class="centeret">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, rem error velit, voluptatum mollitia animi at dolorum ipsam sunt inventore architecto! Ab, hic voluptate illum voluptates deserunt sint fugit facilis! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis minus voluptas sunt eaque commodi rerum maxime tempora sapiente nisi. Odit quis similique repudiandae impedit laudantium sequi voluptates nobis nesciunt provident.</p>
+            </div>
+        </div>
     </div>
     <Form/>
 </section>
+
+<style>
+    .grid_1-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+img {
+   width: 80%;
+   opacity: 70%;
+   
+}
+
+p {
+    max-width: 350px;
+    border: solid 3px;
+    padding: 10px;
+}
+</style>
