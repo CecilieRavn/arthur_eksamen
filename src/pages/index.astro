@@ -23,9 +23,11 @@ import Menu from "../components/Menu.astro";
     </header>
   
     <section id="section">
-      <h2>Section</h2>
+      <h2>Fascinated by people</h2>
       <p></p>
     </section>
+
+    <script src="../scripts/script.js"></script>
 
     <style>
       body {
@@ -41,7 +43,8 @@ import Menu from "../components/Menu.astro";
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  
+  padding: 20px;
+  animation: fadeAnimation 15s linear infinite;
 }
 
 .containerlanding {
@@ -78,7 +81,14 @@ h1 {
 }
 
 h2 {
-  margin-bottom: 20px;
+  margin-top: 100px;
+  font-family: Overskrift;
+}
+
+@keyframes fadeAnimation {
+  0%, 20% { opacity: 1; }
+  25%, 95% { opacity: 0; }
+  100% { opacity: 1; }
 }
     </style>
     </main>
