@@ -6,15 +6,11 @@ import Header2 from "../components/Header2.astro";
 <body>
     <Header2/>
     <section class="grid_1-1">
+        <img src="public/outside-2.webp" alt="Portrait of Arthur">
         <div>
-            <div class="container">
-                <img src="public/outside-2.webp" alt="Portrait of Arthur">
-                <div class="overlay">
-                    <p>"Fascinated by people"</p>
-                </div>
-            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab temporibus quod sint iure omnis, rem placeat rerum eum voluptatem ut magni nemo sed consequatur corporis qui, distinctio a asperiores eos?</p>
+            <Form/>
         </div>
-        <Form/>
     </section>
 </body>
 
@@ -25,31 +21,15 @@ import Header2 from "../components/Header2.astro";
 }
 
 img {
-   width: 100%;
-   opacity: 70%;
-}
-
-.container {
-    position: relative;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 500px;
+    margin: auto;
 }
 
 p {
-    font-family: "Overskrift";
-    font-weight: 400;
-    text-align: center;
+    margin: auto;
+    max-width: 450px;
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 40px;
 }
 </style>
