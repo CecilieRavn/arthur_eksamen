@@ -1,4 +1,14 @@
 ---
+const url = "https://fpatmzvjsoyfltjecggh.supabase.co/rest/v1/Portfolio";
+const options = {
+  headers: {
+    apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZwYXRtenZqc295Zmx0amVjZ2doIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODM4ODc4NzEsImV4cCI6MTk5OTQ2Mzg3MX0.Nk_wdVFUE-CfgNPXVtgKXArtNZkb_lJWZWDhM8DmgUw",
+  },
+};
+const response = await fetch(url, options);
+const data = await response.json();
+
+
 import "../styles/mutual.css";
 import Menu from "../components/Menu.astro";
 import Footer from "../components/Footer.astro";
