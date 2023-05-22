@@ -10,10 +10,11 @@ import Footer from "../components/Footer.astro";
         <img class="arthur" src="public/outside-2.webp" alt="Portrait of Arthur">
         <div>
             <div class="contact_tekst">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab temporibus quod sint iure omnis, rem placeat rerum eum voluptatem ut magni nemo sed consequatur corporis qui, distinctio a asperiores eos?</p>
+                <p>I understand that each client has unique preferences and expectations, and I'm committed to creating memorable and captivating images that exceed your aspirations. Once I receive your message, I will respond to discuss further details and answer any questions you may have.</p>
+                <p>Alternatively, you can reach out to me directly through the following channels</p>
                 <div class="icons">
-                    <a href="https://www.facebook.com/aaizikovichmedia"><img class="icon" src="public/facebook.svg" alt="Facebook icon"></a>
-                    <a href="https://www.instagram.com/aaizikovich/"><img class="icon" src="public/instagram.svg" alt="instagram icon"></a>
+                    <a href="https://www.facebook.com/aaizikovichmedia"><img class="icon" src="/facebook.svg" alt="Facebook icon"></a>
+                    <a href="https://www.instagram.com/aaizikovich/"><img class="icon" src="/instagram.svg" alt="instagram icon"></a>
                 </div>
             </div>
             <Form/>
@@ -23,19 +24,38 @@ import Footer from "../components/Footer.astro";
 </body>
 
 <style>
-.grid_1-1 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+@media (min-width: 800px) {
+    .grid_1-1 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .arthur {
+        width: 500px;
+        margin: auto;
+    }
 }
 
-.arthur {
-    width: 500px;
+@media (min-width: 610px) {
+    .arthur {
+        width: 450px;
+        margin: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .arthur {
+    width: 400px;
     margin: auto;
+}
 }
 
 p {
     margin: auto;
     max-width: 450px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-family: "Tekst";
 }
 
 .contact_tekst {
@@ -44,6 +64,7 @@ p {
     border: 1px solid black;
     padding: 10px;
     margin-bottom: 40px;
+    margin-top: 90px;
 }
 
 .icon {
