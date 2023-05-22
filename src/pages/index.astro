@@ -14,83 +14,93 @@ import Menu from "../components/Menu.astro";
   </head>
   <body>
     <main>
-    <Menu />
-    <header id="landing">
-      <div class="containerlanding">
-        <h1></h1>
-        <a class="scroll-down-button" href="#section">Scroll Down</a>
-      </div>
-    </header>
-  
-    <section id="section">
-      <h2>Fascinated by people</h2>
-      <p></p>
-    </section>
+      <header id="landing">
+        <div class="containerlanding">
+          <h1></h1>
+          <a class="scroll-down-button" href="#section">Scroll Down</a>
+        </div>
+      </header>
 
-    <script src="../scripts/script.js"></script>
+      <section id="section">
+        <Menu />
+        <h2>Fascinated by people</h2>
+        <p></p>
+      </section>
 
-    <style>
-      body {
-  margin: 0;
-  padding: 0;
-}
+      <script src="../scripts/script.js"></script>
 
-#landing {
-  height: 100vh;
-  background-image: url(/public/landing.webp);
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 20px;
-  animation: fadeAnimation 15s linear infinite;
-}
+      <style>
+        body {
+          margin: 0;
+          padding: 0;
+        }
 
-.containerlanding {
-  text-align: center;
-}
+        #landing {
+          height: 100vh;
+          background-image: url(/public/landing.webp);
+          opacity: 85%;
+          background-size: cover;
+          background-position: center;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          padding: 20px;
+          animation: fadeAnimation 10s linear infinite;
+          transition: width 2s, height 2s, transform 2s;
+        }
 
-h1 {
-  margin-bottom: 20px;
-  color: #fff;
-}
+        .containerlanding {
+          text-align: center;
+        }
 
-.scroll-down-button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: rgba(53, 53, 53, 0.5);
-  color: #ffffff;
-  text-decoration: none;
-  font-family: Overskrift;
-  transition: background-color 0.3s ease;
-  margin-bottom: 50px;
-}
+        h1 {
+          margin-bottom: 20px;
+          color: #fff;
+        }
 
-.scroll-down-button:hover {
-  background-color: rgba(255, 255, 255, 0.8);
-  font-family: Overskrift;
-  color: black;
-}
+        .scroll-down-button {
+          display: inline-block;
+          padding: 10px 20px;
+          background-color: rgba(0, 0, 0, 0.5);
+          color: #ffffff;
+          text-decoration: none;
+          font-family: Overskrift;
+          transition: background-color 0.3s ease;
+          margin-bottom: 50px;
+        }
 
-#section {
-  height: 100vh;
-  background-color: #fff;
-  text-align: center;
-  padding-top: 50px;
-}
+        .scroll-down-button:hover {
+          background-color: rgba(255, 255, 255, 0.8);
+          font-family: Overskrift;
+          color: black;
+        }
 
-h2 {
-  margin-top: 100px;
-  font-family: Overskrift;
-}
+        #section {
+          height: 100vh;
+          background-color: #fff;
+          text-align: center;
+          padding-top: 50px;
+        }
 
-@keyframes fadeAnimation {
-  0%, 20% { opacity: 1; }
-  25%, 95% { opacity: 0; }
-  100% { opacity: 1; }
-}
-    </style>
+        h2 {
+          margin-top: 100px;
+          font-family: Overskrift;
+        }
+
+        @keyframes {
+          0%,
+          20% {
+            opacity: 1;
+          }
+          25%,
+          95% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+      </style>
     </main>
   </body>
 </html>

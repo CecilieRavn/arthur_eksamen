@@ -2,9 +2,9 @@ window.addEventListener("DOMContentLoaded", function () {
   var landingSection = document.getElementById("landing");
   var images = [
     "landing.webp",
-    "landing1.webp",
-    "landing2.webp",
-    "landing3.webp",
+    "landing4.webp",
+    "landing5.webp",
+    "landing6cut.webp",
   ];
   var currentIndex = 0;
 
@@ -13,7 +13,7 @@ window.addEventListener("DOMContentLoaded", function () {
     setTimeout(function () {
       landingSection.style.backgroundImage =
         "url(" + images[currentIndex] + ")";
-      landingSection.style.animation = "fadeAnimation 25s linear infinite"; // Fade in the section
+      landingSection.style.animation = "fadeAnimation 10s linear infinite"; // Fade in the section
       currentIndex = (currentIndex + 1) % images.length;
     }, 500);
   }
