@@ -2,9 +2,9 @@ window.addEventListener("DOMContentLoaded", function () {
   var landingSection = document.getElementById("landing");
   var images = [
     "landing.webp",
-    "landing1.webp",
-    "landing2.webp",
-    "landing3.webp",
+    "landing4.webp",
+    "landing5.webp",
+    "landing6cut.webp",
   ];
   var currentIndex = 0;
 
