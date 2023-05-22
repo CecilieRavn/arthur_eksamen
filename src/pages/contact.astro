@@ -2,16 +2,24 @@
 import "../styles/mutual.css";
 import Form from "../components/Form.astro";
 import Header2 from "../components/Header2.astro";
+import Footer from "../components/Footer.astro";
 ---
 <body>
     <Header2/>
     <section class="grid_1-1">
-        <img src="public/outside-2.webp" alt="Portrait of Arthur">
+        <img class="arthur" src="public/outside-2.webp" alt="Portrait of Arthur">
         <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab temporibus quod sint iure omnis, rem placeat rerum eum voluptatem ut magni nemo sed consequatur corporis qui, distinctio a asperiores eos?</p>
+            <div class="contact_tekst">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab temporibus quod sint iure omnis, rem placeat rerum eum voluptatem ut magni nemo sed consequatur corporis qui, distinctio a asperiores eos?</p>
+                <div class="icons">
+                    <a href="https://www.facebook.com/aaizikovichmedia"><img class="icon" src="public/facebook.svg" alt="Facebook icon"></a>
+                    <a href="https://www.instagram.com/aaizikovich/"><img class="icon" src="public/instagram.svg" alt="instagram icon"></a>
+                </div>
+            </div>
             <Form/>
         </div>
     </section>
+    <Footer/>
 </body>
 
 <style>
@@ -20,7 +28,7 @@ import Header2 from "../components/Header2.astro";
     grid-template-columns: repeat(2, 1fr);
 }
 
-img {
+.arthur {
     width: 500px;
     margin: auto;
 }
@@ -28,8 +36,23 @@ img {
 p {
     margin: auto;
     max-width: 450px;
+}
+
+.contact_tekst {
+    margin: auto;
+    max-width: 450px;
     border: 1px solid black;
     padding: 10px;
     margin-bottom: 40px;
+}
+
+.icon {
+    width: 30px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
 }
 </style>
