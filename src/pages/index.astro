@@ -1,6 +1,25 @@
 ---
+const url = "https://fpatmzvjsoyfltjecggh.supabase.co/rest/v1/Portfolio";
+const options = {
+  headers: {
+    apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZwYXRtenZqc295Zmx0amVjZ2doIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODM4ODc4NzEsImV4cCI6MTk5OTQ2Mzg3MX0.Nk_wdVFUE-CfgNPXVtgKXArtNZkb_lJWZWDhM8DmgUw" ,
+  } ,
+};
+const response = await fetch(url, options);
+const data = await response.json();
+
+/*(showCategories);
+
+function showCategories(cats) {
+  cats.forEach(showCategory);
+}
+
+function showCategory(cat) {}*/
+
+
 import "../styles/mutual.css";
 import Menu from "../components/Menu.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <html lang="en">
@@ -9,12 +28,104 @@ import Menu from "../components/Menu.astro";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
+    <link rel="icon" type="image/x-icon" href="logo.svg" />
     <title>Arthur</title>
   </head>
   <body>
-    <Menu />
     <main>
-      <img src="public/landing.webp" alt="" />
+    <Menu />
+    <header id="landing">
+      <div class="containerlanding">
+        <h1></h1>
+        <a class="scroll-down-button" href="#section">Scroll Down</a>
+      </div>
+    </header>
+  
+    <section id="section">
+      <h2>Fascinated by people</h2>
+      <div class="grid">
+        <div>
+          <a href="portfolio">Wedding</a>
+          <a href="portfolio">Portrait</a>
+        </div>
+        <div>
+          <a href="portfolio">Events</a>
+          <a href="portfolio">Fashion</a>
+        </div>
+      </div>
+    </section>
+    <Footer/>
+    <script src="../scripts/script.js"></script>
+
+    <style>
+      body {
+  margin: 0;
+  padding: 0;
+}
+
+#landing {
+  height: 100vh;
+  background-image: url(/public/landing.webp);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+  animation: fadeAnimation 15s linear infinite;
+}
+
+.containerlanding {
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.scroll-down-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgba(53, 53, 53, 0.5);
+  color: #ffffff;
+  text-decoration: none;
+  font-family: Overskrift;
+  transition: background-color 0.3s ease;
+  margin-bottom: 50px;
+}
+
+.scroll-down-button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-family: Overskrift;
+  color: black;
+}
+
+#section {
+  height: 100vh;
+  background-color: #fff;
+  text-align: center;
+  padding-top: 50px;
+}
+
+h2 {
+  margin-top: 100px;
+  font-family: Overskrift;
+}
+
+@keyframes fadeAnimation {
+  0%, 20% { opacity: 1; }
+  25%, 95% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@media (min-width: 700px) {
+  .grid {
+    display: grid;
+    grid-column: repeat(2, 1fr);
+  }
+}
+    </style>
     </main>
   </body>
 </html>
