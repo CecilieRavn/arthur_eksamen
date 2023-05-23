@@ -4,8 +4,12 @@ import Header2 from "../components/Header2.astro";
 import Footer from "../components/Footer.astro";
 ---
 <Header2/>
+<!--<video id="myVideo" autoplay>
+    <source src="/arthurvideo.mp4" type="video/mp4">
+</video>-->
 <h2>Something about myself</h2>
-<p>My name is Arthur Aizikovich and I'm a Copenhagen-based photographer, originally from Latvia.
+<p>
+    My name is Arthur Aizikovich and I'm a           Copenhagen-based photographer, originally from Latvia.
     I experiment with different types of photography such as events, portraits, commercial content, and street-photography. 
     One aspect of my work that brings me great joy is event photography. Whether it's a grand celebration, a corporate gathering, or a cultural festival, I believe that every event holds its own magic waiting to be captured. I am dedicated to ensuring that the energy, emotions, and the spirit of the occasion are encapsulated through my lens.
 </p>
@@ -38,7 +42,7 @@ import Footer from "../components/Footer.astro";
         font-size: var(--font-sm);
     }
 
-    .video {
+    #myVideo {
         display: block;
         margin: auto;
         width: 100%;
