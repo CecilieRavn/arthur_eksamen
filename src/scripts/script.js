@@ -13,7 +13,7 @@ window.addEventListener("DOMContentLoaded", function () {
     setTimeout(function () {
       landingSection.style.backgroundImage =
         "url(" + images[currentIndex] + ")";
-      landingSection.style.animation = "fadeAnimation 25s linear infinite"; // Fade in the section
+      landingSection.style.animation = "fadeAnimation 50s ease-in-out"; // Fade in the section
       currentIndex = (currentIndex + 1) % images.length;
     }, 500);
   }
