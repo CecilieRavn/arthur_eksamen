@@ -11,11 +11,15 @@
 import "../styles/mutual.css";
 import Header2 from "../components/Header2.astro";
 import Footer from "../components/Footer.astro";
+import Category from "../components/Category.astro";
 ---
 <Header2/>
-<h1 class="text2">category</h1>
+<main>
+  {data.map((portfolio) => <Category image={`/${portfolio.image}`} category={portfolio.category}/>)}
+</main>
+<!--<h1 class="text2">category</h1>
 <div class="grid-container">
-     <!-- Left arrow -->
+     Left arrow 
  <div class="arrow left">&#60;</div>
     <div class="grid-item">
       <img src="fashion1.webp" alt="Fashion">
@@ -25,12 +29,12 @@ import Footer from "../components/Footer.astro";
     </div>
    <img src="fashion3.webp" alt="Fashion">
     </div>
-    <!-- Right arrow -->
+     Right arrow 
    <div class="arrow right">&#62;</div>
   </div>
   <div class="grid-container2">
   <div class="text">2019</div>
-</div>
+</div>-->
 
 <Footer/>
   <style>

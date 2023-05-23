@@ -1,10 +1,12 @@
-
-<h1 class="category">events</h1>
+---
+const { image, category } = Astro.props;
+---
+<h1 class="category">{category}</h1>
 <div class="grid-container">
      <!-- Left arrow -->
  <div class="arrow left">&#60;</div>
     <div class="grid-item">
-      <img class="image" src="fashion1.webp" alt="Fashion">
+      <img class="image" src={image} alt="">
     </div>
 </div>
 
