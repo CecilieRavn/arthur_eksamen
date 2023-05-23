@@ -2,19 +2,24 @@
 const url = "https://fpatmzvjsoyfltjecggh.supabase.co/rest/v1/Portfolio";
 const options = {
   headers: {
-    apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZwYXRtenZqc295Zmx0amVjZ2doIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODM4ODc4NzEsImV4cCI6MTk5OTQ2Mzg3MX0.Nk_wdVFUE-CfgNPXVtgKXArtNZkb_lJWZWDhM8DmgUw",
+    apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZwYXRtenZqc295Zmx0amVjZ2doIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODM4ODc4NzEsImV4cCI6MTk5OTQ2Mzg3MX0.Nk_wdVFUE-CfgNPXVtgKXArtNZkb_lJWZWDhM8DmgUw" ,
   },
 };
 const response = await fetch(url, options);
-const data = await response.json();
+const data = await response.json();   
 
-/*(showCategories);
+(showCategories);
 
 function showCategories(cats) {
   cats.forEach(showCategory);
 }
 
-function showCategory(cat) {}*/
+function showCategory(cat) {
+  //Fang template
+  //Clone
+  //Ændre indhold
+  //Appende
+}
 
 
 import "../styles/mutual.css";
@@ -45,12 +50,12 @@ import Footer from "../components/Footer.astro";
       <h2>Fascinated by people</h2>
       <div class="grid">
         <div>
-          <a href="portfolio">Wedding</a>
-          <a href="portfolio">Portrait</a>
+          <template><a href="portfolio">Wedding</a></template>
+          <!--<a href="portfolio">Portrait</a>-->
         </div>
         <div>
-          <a href="portfolio">Events</a>
-          <a href="portfolio">Fashion</a>
+          <!--<a href="portfolio">Events</a>
+          <a href="portfolio">Fashion</a>-->
         </div>
       </div>
     </section>
