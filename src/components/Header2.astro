@@ -1,3 +1,13 @@
+<script>
+  function toggleMenu() {
+  var menu = document.getElementById("menu");
+  if (menu.style.display === "block") {
+    menu.style.display = "none";
+  } else {
+    menu.style.display = "block";
+  }
+}
+</script>
 <header>
     <div class="navigation_wrap">
         <div class="logo">
@@ -6,7 +16,12 @@
         <a class="logoname" href="/">ARTHUR AIZIKOVICH</a>
       </div>
     <nav class="main-menu">
-        <ul class="menu">
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+        <ul id="menu">
             <li>
                 <a href=portfolio>Portfolio</a>
             </li>
@@ -66,7 +81,50 @@
     font-weight: 100;
   }
 
-  .menu {
+  #menu {
     padding-top: 35px;
   }  
+
+
+  nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-toggle .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+}
+@media screen and (min-width: 768px) {
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  #menu {
+    display: none;
+  }
+}
 </style>
