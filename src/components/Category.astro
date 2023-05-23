@@ -1,38 +1,13 @@
----
-  const url = "https://fpatmzvjsoyfltjecggh.supabase.co/rest/v1/Portfolio";
-  const options = {
-    headers: {
-      apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZwYXRtenZqc295Zmx0amVjZ2doIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODM4ODc4NzEsImV4cCI6MTk5OTQ2Mzg3MX0.Nk_wdVFUE-CfgNPXVtgKXArtNZkb_lJWZWDhM8DmgUw",
-    },
-  };
-  const response = await fetch(url, options);
-  const data = await response.json();
 
-import "../styles/mutual.css";
-import Header2 from "../components/Header2.astro";
-import Footer from "../components/Footer.astro";
----
-<Header2/>
-<h1 class="text2">category</h1>
+<h1 class="category">events</h1>
 <div class="grid-container">
      <!-- Left arrow -->
  <div class="arrow left">&#60;</div>
     <div class="grid-item">
-      <img src="fashion1.webp" alt="Fashion">
+      <img class="image" src="fashion1.webp" alt="Fashion">
     </div>
-    <div class="grid-item">
-      <img src="fashion2.webp" alt="Fashion">
-    </div>
-   <img src="fashion3.webp" alt="Fashion">
-    </div>
-    <!-- Right arrow -->
-   <div class="arrow right">&#62;</div>
-  </div>
-  <div class="grid-container2">
-  <div class="text">2019</div>
 </div>
 
-<Footer/>
   <style>
     .grid-container {
       display: grid;
@@ -45,7 +20,7 @@ import Footer from "../components/Footer.astro";
       width: 100%;
       height: auto;
     }
-    .text, .text2 {
+    .text, .category {
         display: inline;
         border-bottom: 1px solid;
         padding-bottom: 3px;
@@ -59,7 +34,7 @@ import Footer from "../components/Footer.astro";
   left: 50%;
   transform: translate(-50%, -50%);
     }
-    .text2 {
+    .category {
         font-size: 28px;
         position: absolute;
         left: 50%;

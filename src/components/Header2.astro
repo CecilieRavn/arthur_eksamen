@@ -36,13 +36,30 @@
 </header>
 
 <style>
-    header {
+   
+   header {
         align-items: right;
         font-family: "Overskrift";
         padding-right: 2rem;
         display: flex;
         justify-content: space-between;
     }
+    .logoname {
+    margin-top: 9%;
+    font-family: "Overskrift";
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom: 25%;
+    margin-left: 9%;
+  }
+  .navigation_wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+    @media (min-width: 800px) {
 
     li {
         float: right;
@@ -62,69 +79,13 @@
         margin-top: 9%;
     }
 
-    .navigation_wrap {
-    position: relative;
-    display: flex;
-    align-items: center;
-  }
-
-  .logo_img {
-    width: 130px;
-  }
-
-  .logoname {
-    margin-top: 9%;
-    font-family: "Overskrift";
-    color: black;
-    text-decoration: none;
+  .logoname{
     font-size: 35px;
-    font-weight: 100;
+    margin-top: 9%;
   }
 
-  #menu {
+  .menu {
     padding-top: 35px;
   }  
-
-
-  nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline-block;
-  margin-right: 20px;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.menu-toggle {
-  display: none;
-  cursor: pointer;
-}
-
-.menu-toggle .bar {
-  width: 25px;
-  height: 3px;
-  background-color: #fff;
-  margin: 5px 0;
-}
-@media screen and (min-width: 768px) {
-  nav ul li {
-    display: block;
-    margin: 10px 0;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-
-  #menu {
-    display: none;
-  }
-}
 </style>
+   
