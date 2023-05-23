@@ -25,10 +25,45 @@ import Footer from "../components/Footer.astro";
 </grid-container2>
 
 <Footer/>
-
-
-
   <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+      grid-gap: 10px;
+    }
+
+    .grid-item {
+      width: 100%;
+      height: auto;
+    }
+    .text, .text2 {
+        display: inline;
+        border-bottom: 1px solid;
+        padding-bottom: 3px;
+        font-family: "Overskrift";
+        font-weight: lighter;
+        margin-left: 1rem;
+    }
+    .text {
+        font-size: 20px;
+        position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    }
+    .text2 {
+        font-size: 28px;
+        position: absolute;
+        left: 50%;
+  transform: translate(-50%, -50%);
+    }
+    .grid-item img {
+      width: 100%;
+      height: auto;
+    }
+    .grid-container {
+    margin: 5rem;
+    }
+    @media (min-width: 800px) {
     .grid-container {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -39,28 +74,6 @@ import Footer from "../components/Footer.astro";
       margin-bottom: 2rem;
     }
     
-    .grid-item img {
-      width: 100%;
-      height: auto;
-    }
-        .text, .text2 {
-        display: inline;
-        border-bottom: 1px solid;
-        padding-bottom: 3px;
-        font-family: "Overskrift";
-        font-weight: lighter;
-        margin-left: 1rem;
-        align-content: center;  
-    }
-    .text {
-        font-size: 20px;
-        position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%);
-    }
-    .text2 {
-        font-size: 28px;
-    }
 .grid-container2{
     position: relative;
 }
@@ -83,4 +96,5 @@ import Footer from "../components/Footer.astro";
 .grid-container .arrow.right {
   right: 10px;
 }
+    }
   </style>
