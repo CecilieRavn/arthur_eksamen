@@ -2,6 +2,7 @@
 import "../styles/mutual.css";
 import Menu from "../components/Menu.astro";
 import Footer from "../components/Footer.astro";
+import Galleri from "../components/Galleri.astro";
 ---
 
 <html lang="en">
@@ -30,16 +31,7 @@ import Footer from "../components/Footer.astro";
   
     <section id="section">
       <h2>Fascinated by people</h2>
-      <div class="grid">
-        <div>
-          <a href="portfolio">Wedding</a>
-          <a href="portfolio">Portrait</a>
-        </div>
-        <div>
-          <a href="portfolio">Events</a>
-          <a href="portfolio">Fashion</a>
-        </div>
-      </div>
+      <Galleri/>
     </section>
     <Footer/>
     <script src="../scripts/script.js"></script>
@@ -111,9 +103,7 @@ h1 {
 {
   top: -15px ;
   left : -15px ;
-  animation-delay : 0. 2s ;
-
-  
+  animation-delay : 0. 2s ; 
 }
 
 
@@ -131,9 +121,6 @@ h1 {
     border-color: #222;
   }
 }
-
-
-
 
 #section {
   height: 100vh;
@@ -153,12 +140,8 @@ h2 {
   100% { opacity: 1; }
 }
 
-@media (min-width: 700px) {
-  .grid {
-    display: grid;
-    grid-column: repeat(2, 1fr);
-  }
-}
+
+
     </style>
     </main>
   </body>
