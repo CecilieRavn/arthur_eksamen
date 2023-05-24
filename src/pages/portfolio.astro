@@ -9,11 +9,11 @@
   const data = await response.json();
 
 import "../styles/mutual.css";
-import Header2 from "../components/Header2.astro";
+import Mobilmenu from "../components/Mobilmenu.astro";
 import Footer from "../components/Footer.astro";
 import Category from "../components/Category.astro";
 ---
-<Header2/>
+<Mobilmenu/>
 <main>
   <h1>Fashion</h1>
   {data.map((portfolio) => <Category image={`/${portfolio.image}`}/>)}
