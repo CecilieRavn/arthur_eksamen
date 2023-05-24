@@ -1,17 +1,11 @@
 ---
 const { image, } = Astro.props;
 ---
+<h1 id="category">Fashion</h1>
 <main id="grid-container">
-<h1 id="category"></h1>
      <!-- Left arrow 
  <div class="arrow left">&#60;</div>
  -->
-    <div id="grid-item">
-      <img class="image" src={image} alt="">
-    </div>
-    <div id="grid-item">
-      <img class="image" src={image} alt="">
-    </div>
     <div id="grid-item">
       <img class="image" src={image} alt="">
     </div>
@@ -39,11 +33,14 @@ const { image, } = Astro.props;
         font-family: "Overskrift";
         font-weight: lighter;
         margin-left: 1rem;
+        margin-bottom: 10%;
         font-size: 28px;
         position: absolute;
         left: 50%;
   transform: translate(-50%, -50%);
-    }
+  grid-column: 1 / -1; 
+}
+    
     #grid-item img {
       width: 8
       0%;

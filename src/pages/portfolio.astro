@@ -16,7 +16,6 @@ import Category from "../components/Category.astro";
 <Mobilmenu/>
 <main>
   <div id="grid-container">
-  <h1 id="category">Fashion</h1>
   {data.map((portfolio) => <Category image={`/${portfolio.image}`}/>)}
 </div>
 </main>
