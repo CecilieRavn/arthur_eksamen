@@ -1,60 +1,57 @@
 ---
 const { image, } = Astro.props;
 ---
-<h1 class="category"></h1>
-
-<div class="grid-container">
-     <!-- Left arrow -->
+<main id="grid-container">
+<h1 id="category"></h1>
+     <!-- Left arrow 
  <div class="arrow left">&#60;</div>
-    <div class="grid-item">
+ -->
+    <div id="grid-item">
       <img class="image" src={image} alt="">
     </div>
-</div>
+    <div id="grid-item">
+      <img class="image" src={image} alt="">
+    </div>
+    <div id="grid-item">
+      <img class="image" src={image} alt="">
+    </div>
+    <!-- Right arrow 
+ <div class="arrow right">&#62;</div>
+ -->
+</main>
 
   <style>
-    .grid-container {
+    #grid-container {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
       grid-gap: 10px;
       margin: 20%;
     }
 
-    .grid-item {
+    #grid-item {
       width: 100%;
       height: auto;
     }
-    .text, .category {
+    #category {
         display: inline;
         border-bottom: 1px solid;
         padding-bottom: 3px;
         font-family: "Overskrift";
         font-weight: lighter;
         margin-left: 1rem;
-    }
-    .text {
-        font-size: 20px;
-        position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%);
-    }
-    .category {
         font-size: 28px;
         position: absolute;
         left: 50%;
   transform: translate(-50%, -50%);
     }
-    .grid-item img {
+    #grid-item img {
       width: 8
       0%;
       height: auto;
     }
-    .grid-container2{
-    margin-bottom: 20%;
-    margin-top: 9%;
-    }
 
     @media (min-width: 800px) {
-    .grid-container {
+    #grid-container {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-gap: 20px;
@@ -64,11 +61,6 @@ const { image, } = Astro.props;
       margin-bottom: 2rem;
     }
     
-.grid-container2{
-    position: relative;
-    margin-bottom: 9%;
-    margin-top: 5%;
-}
 .grid-container .arrow {
   position: absolute;
   top: 80%;
@@ -81,11 +73,11 @@ const { image, } = Astro.props;
   margin-right: 3rem;
 }
 
-.grid-container .arrow.left {
+#grid-container .arrow.left {
   left: 10px;
 }
 
-.grid-container .arrow.right {
+#grid-container .arrow.right {
   right: 10px;
 }
     }
