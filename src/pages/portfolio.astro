@@ -14,9 +14,11 @@ import Footer from "../components/Footer.astro";
 import Category from "../components/Category.astro";
 ---
 <Mobilmenu/>
-<main id="grid-container">
+<main>
+  <div id="grid-container">
   <h1 id="text2">Fashion</h1>
   {data.map((portfolio) => <Category image={`/${portfolio.image}`}/>)}
+</div>
 </main>
 <!--<h1 class="text2">category</h1>
 <div class="grid-container">
@@ -38,68 +40,3 @@ import Category from "../components/Category.astro";
 </div>-->
 
 <Footer/>
-  <style>
-    #grid-container {
-      display: grid;
-      grid-template-columns: (1fr 1fr 1fr);
-      grid-gap: 10px;
-    }
-
-    #text2 {
-        display: inline;
-        border-bottom: 1px solid;
-        padding-bottom: 3px;
-        font-family: "Overskrift";
-        font-weight: lighter;
-        margin-left: 1rem;
-        font-size: 28px;
-        position: absolute;
-        left: 50%;
-  transform: translate(-50%, -50%);
-    }
-  
-    .grid-item img {
-      width: 8
-      0%;
-      height: auto;
-    }
-    .grid-container2{
-    margin-bottom: 20%;
-    margin-top: 9%;
-    }
-
-    @media (min-width: 800px) {
-    #grid-container {
-    
-    }
-    image {
-      width: 100%;
-      height: auto;
-    }
-    
-.grid-container2{
-    position: relative;
-    margin-bottom: 9%;
-    margin-top: 5%;
-}
-#grid-container .arrow {
-  position: absolute;
-  top: 80%;
-  transform: translateY(-50%);
-  color: black;
-  padding: 10px;
-  cursor: pointer;
-  font-size: 50px;
-  margin-left: 3rem;
-  margin-right: 3rem;
-}
-
-#grid-container .arrow.left {
-  left: 10px;
-}
-
-#grid-container .arrow.right {
-  right: 10px;
-}
-    }
-  </style>
