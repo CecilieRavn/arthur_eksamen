@@ -29,7 +29,17 @@ import "../styles/mutual.css";
         margin: auto;
         align-content: center;
         max-width: 600px;
+        position: relative;
+        overflow: hidden;
     } 
+
+    .container img {
+        transition: transform 0.3s ease;
+    }
+
+    .container img:hover {
+        transform: scale(1.2);
+    }
     
 
     .grid-container {
