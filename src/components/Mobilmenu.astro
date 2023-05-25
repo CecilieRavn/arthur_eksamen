@@ -30,11 +30,9 @@
     background-color: #ffff;
   }
   header {
-    display: flex;
     gap: 1rem;
     align-items: center;
     align-items: right;
-    padding-right: 2rem;
     justify-content: space-between;
     position: fixed;
     top: 0;
@@ -166,7 +164,15 @@
       position: fixed;
       width: 100%;
       background-color: #ffffff;
-    }
+      header {
+    display: flex;
+    padding-right: 2rem;
+    justify-content: space-between;
+    top: 0;
+    background: rgba(255, 255, 255, 0);
+    width: 100%;
+    z-index: 99999;
+  }
 
     body {
       padding-top: 180px;
