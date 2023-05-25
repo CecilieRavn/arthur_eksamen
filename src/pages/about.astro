@@ -59,22 +59,26 @@ import Mobilmenu from "../components/Mobilmenu.astro";
       <style>
         p {
           max-width: 900px;
-          padding-bottom: 70px;
           font-family: "Tekst";
           margin: auto;
           font-size: var(--font-xxs);
           line-height: 30px;
+          margin-top: 3rem;
         }
 
         h2 {
-            text-decoration: underline;
-          font-family: "Tekst";
-          text-align: center;
-          padding-bottom: 70px;
-          font-size: var(--font-sm);
-          margin-top: 100px;
+          display: inline;
+          border-bottom: 1px solid;
+          padding-bottom: 3px;
+          font-family: "Overskrift";
+          font-weight: lighter;
+          margin-left: 40%;
+          margin-top: 70px;
+          font-size: 30px;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          grid-column: 1 / -1;
         }
-
 
         Video {
           display: flex;
