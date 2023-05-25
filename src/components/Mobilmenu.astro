@@ -1,8 +1,5 @@
 <header>
   <div class="navigation_wrap">
-    <div class="logo">
-      <a href="/"> <img class="logo_img" src="/img/kune_logo.png" alt="" /></a>
-    </div>
     <a class="logoname" href="/index">ARTHUR AIZIKOVICH</a>
   </div>
   <button id="burger-menu">
@@ -23,6 +20,10 @@
 <style>
   /* HEADER */
 
+  body {
+      padding-top: 50px;
+    }
+
   .navigation_wrap {
     position: relative;
     display: flex;
@@ -41,18 +42,24 @@
     z-index: 99999;
   }
 
-  .logo_img {
-    width: 130px;
-  }
-
   .logoname {
-    margin-top: 9%;
-    margin-bottom: 9%;
+    padding: 30px;
     font-family: "Overskrift";
     color: black;
     text-decoration: none;
-    font-size: 35px;
+    font-size: 28px;
     font-weight: 100;
+  }
+  @media (max-width: 700px) {
+    .logoname{
+      font-size: 25px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .logoname{
+      font-size: 23px;
+    }
   }
 
   /* BURGERMENU */
@@ -62,7 +69,7 @@
     display: block;
     border: none;
     background: transparent;
-    margin: 60px;
+    margin: 35px;
     cursor: pointer;
     height: 27px;
     width: 27px;
@@ -164,18 +171,6 @@
       position: fixed;
       width: 100%;
       background-color: #ffffff;
-      header {
-    display: flex;
-    padding-right: 2rem;
-    justify-content: space-between;
-    top: 0;
-    background: rgba(255, 255, 255, 0);
-    width: 100%;
-    z-index: 99999;
-  }
-
-    body {
-      padding-top: 180px;
     }
   }
 </style>
