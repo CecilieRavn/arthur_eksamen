@@ -1,5 +1,5 @@
 ---
-  const url = "https://fpatmzvjsoyfltjecggh.supabase.co/rest/v1/Portfolio?category=eq.fashion";
+  const url = "https://fpatmzvjsoyfltjecggh.supabase.co/rest/v1/Portfolio?category=eq.portrait";
   const options = {
     headers: {
       apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZwYXRtenZqc295Zmx0amVjZ2doIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODM4ODc4NzEsImV4cCI6MTk5OTQ2Mzg3MX0.Nk_wdVFUE-CfgNPXVtgKXArtNZkb_lJWZWDhM8DmgUw",
@@ -8,20 +8,16 @@
   const response = await fetch(url, options);
   const data = await response.json();
 
-import "../styles/mutual.css";
-import Mobilmenu from "../components/Mobilmenu.astro";
-import Footer from "../components/Footer.astro";
-import Category from "../components/Category.astro";
+  import "../styles/mutual.css";
+  import Mobilmenu from "../components/Category.astro";
+  import Category from "../components/Category.astro";
+  import Footer from "../components/Footer.astro";
 ---
 <Mobilmenu/>
-  <h1>Fashion</h1>
-  <!-- Left arrow -->
-  <div class="arrow left">&#60;</div>
-  <div id="grid-container">
+<h1>Portrait</h1>
+<div id="grid-container">
   {data.map((portfolio) => <Category image={`/${portfolio.image}`}/>)}
 </div>
-<div class="arrow right">&#62;</div>
-<!-- Right arrow -->
 <Footer/>
 <style>
   h1 {
@@ -41,7 +37,7 @@ import Category from "../components/Category.astro";
 
 #grid-container {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       grid-gap: 10px;
       margin: 20%;
     }
@@ -64,6 +60,9 @@ import Category from "../components/Category.astro";
       max-width: 800px;
     }
     
-    
-
+    img{
+      width: 800px;
+      height: auto;
+    }
+}
 </style>

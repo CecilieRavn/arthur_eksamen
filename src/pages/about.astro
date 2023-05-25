@@ -15,7 +15,7 @@ import Mobilmenu from "../components/Mobilmenu.astro";
   <body>
     <main>
       <Mobilmenu />
-      <video width="620" height="740" loop autoplay>
+      <video width="620" height="740" controls>
         <source src="../arthurvideo.mp4" type="video/mp4" />
 
         <source src="../arthurvideo.mp4" type="video/ogg" />
@@ -91,13 +91,13 @@ import Mobilmenu from "../components/Mobilmenu.astro";
 
         @media (max-width: 800px) {
           h2 {
-            font-size: var(--font-md);
+            font-size: 23px;
             margin-top: 50px;
           }
 
           p {
             max-width: 90%;
-            font-size: var(--font-sm);
+            font-size: 17px;
             line-height: 26px;
           }
 
