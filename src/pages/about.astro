@@ -11,11 +11,12 @@ import Mobilmenu from "../components/Mobilmenu.astro";
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <link rel="icon" type="image/x-icon" href="logo.svg" />
+    <title>About</title>
   </head>
   <body>
     <main>
       <Mobilmenu />
-      <video width="620" height="740" loop autoplay>
+      <video width="620" height="740" controls>
         <source src="../arthurvideo.mp4" type="video/mp4" />
 
         <source src="../arthurvideo.mp4" type="video/ogg" />
@@ -59,22 +60,26 @@ import Mobilmenu from "../components/Mobilmenu.astro";
       <style>
         p {
           max-width: 900px;
-          padding-bottom: 70px;
           font-family: "Tekst";
           margin: auto;
           font-size: var(--font-xxs);
           line-height: 30px;
+          margin-top: 3rem;
         }
 
         h2 {
-            text-decoration: underline;
-          font-family: "Tekst";
-          text-align: center;
-          padding-bottom: 70px;
-          font-size: var(--font-sm);
-          margin-top: 100px;
+          display: inline;
+          border-bottom: 1px solid;
+          padding-bottom: 3px;
+          font-family: "Overskrift";
+          font-weight: lighter;
+          margin-left: 40%;
+          margin-top: 70px;
+          font-size: 30px;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          grid-column: 1 / -1;
         }
-
 
         Video {
           display: flex;
@@ -87,13 +92,13 @@ import Mobilmenu from "../components/Mobilmenu.astro";
 
         @media (max-width: 800px) {
           h2 {
-            font-size: var(--font-md);
+            font-size: 23px;
             margin-top: 50px;
           }
 
           p {
             max-width: 90%;
-            font-size: var(--font-sm);
+            font-size: 17px;
             line-height: 26px;
           }
 

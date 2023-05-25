@@ -8,7 +8,14 @@
   </button>
   <nav id="menu">
     <ul>
-      <li><a href="/">portfolio</a></li>
+      <li class="dropdown"><a href="">portfolio</a>
+        <div class="dropdown-content">
+          <a href="/events">events</a>
+          <a href="/fashion">fashion</a>
+          <a href="/portrait">portrait</a>
+          <a href="/wedding">wedding</a>
+        </div>
+      </li>
       <li><a href="/contact">contact</a></li>
       <li><a href="/about">about</a></li>
     </ul>
@@ -143,7 +150,8 @@
   #menu.overlay {
     visibility: visible;
     opacity: 1;
-    padding-top: 20%;
+    /*padding-top: 20%;*/
+    padding-top: 10%;
     background: #090909c6;
   }
   #menu ul {
@@ -173,4 +181,29 @@
       background-color: #ffffff;
     }
   }
+
+  /*Dropdown menu*/
+  .dropdown {
+    position: relative;
+  }
+
+  .dropdown-content {
+    display: none;
+    top: 100%;
+    left: 0;
+    min-width: 160px;
+  }
+
+  .dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 10px;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
 </style>
