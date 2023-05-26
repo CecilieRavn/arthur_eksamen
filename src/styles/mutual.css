@@ -14,6 +14,7 @@
   --font-lg: 40px;
   --font-regular: 400px;
   --font-medium: 500px;
+  --transition: all 400ms ease;
 }
 
 * {
