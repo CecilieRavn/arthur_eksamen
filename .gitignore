@@ -19,6 +19,6 @@ pnpm-debug.log*
 
 # macOS-specific files
 .DS_Store
-video/
+video/mp4
 *.mp4
 *.mv4
