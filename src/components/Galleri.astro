@@ -6,20 +6,28 @@ import "../styles/mutual.css";
 <div class="grid-container">
     <div class="container">
         <a href="events"><img src="/galleri1.webp" alt="events"></a>
-        <div class="centered">Events</div>
+        <a href="evnts">
+            <div class="centered">Events</div>
+        </a>
       
     </div>
     <div class="container">
         <a href="fashion"><img src="/galleri2.webp" alt="fashion"></a>
-        <div class="centered">Fashion</div>
+        <a href="fashion">
+            <div class="centered">Fashion</div>
+        </a>
     </div>
     <div class="container">
         <a href="portrait"><img src="/galleri3.webp" alt="portrait"></a>
-        <div class="centered">Portrait</div>
+        <a href="portrait">
+            <div class="centered">Portrait</div>
+        </a>
     </div>
     <div class="container">
         <a href="wedding"><img src="/galleri4.webp" alt="wedding"></a>
-        <div class="centered">Wedding</div>
+        <a href="wedding">
+            <div class="centered">Wedding</div>
+        </a>
     </div>
 </div>
 
@@ -29,9 +37,7 @@ import "../styles/mutual.css";
         grid-template-columns: repeat(2, 1fr);
         margin: auto;
         align-content: center;
-        max-width: 600px;
-        position: relative;
-        overflow: hidden;
+        max-width: 500px; 
     } 
 
     .container img {
@@ -49,8 +55,7 @@ import "../styles/mutual.css";
 
     img {
         width: 200px;
-        margin-bottom: 40px;
-        margin-top: 40px;   
+        margin-top: 25px;   
     }
     .container img {
         transform: 0.3s ease;
@@ -61,20 +66,9 @@ import "../styles/mutual.css";
     }
 
     .container {
-        position: relative;
         text-align: center; 
         color: #black;
         overflow: hidden;
-    }
-
-    .centered {
-        position: absolute;
-        top:50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-family: "Overskrift";
-        font-weight: 1000;
-        font-size: var(--font-xs);
     }
 
     img:hover {
@@ -84,6 +78,14 @@ import "../styles/mutual.css";
     a {
         text-decoration: none;
         color: var(--brand-color)
+    }
+
+    .centered {
+        position: relative;
+        top: -45%;
+        font-family: "Overskrift";
+        font-weight: 600;
+        font-size: var(--font-xs);
     }
 
     @media (max-width: 500px) {

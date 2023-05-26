@@ -1,6 +1,6 @@
 :root {
   --brand-color: #131313;
-  --secondary: #f9f9f9;
+  --secondary: #f8f8f8;
   --tertiary: #ebebeb;
   --space-sm: 10px;
   --space-md: 20px;
@@ -14,6 +14,7 @@
   --font-lg: 40px;
   --font-regular: 400px;
   --font-medium: 500px;
+  --transition: all 400ms ease;
 }
 
 * {
@@ -38,3 +39,7 @@ img {
   src: url(/Nunito-Light.woff2);
 }
 
+body {
+  background-color: #ffff;
+  z-index: -10;
+}
