@@ -1,0 +1,54 @@
+---
+const { image, } = Astro.props;
+---
+<main id="grid-container">
+      <img class="image" src={image} alt=""> 
+</main>
+
+  <style>
+    #grid-container main {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+      grid-gap: 10px;
+      margin: 20%;
+    }
+
+    
+    .image main{
+      width: 8
+      0%;
+      height: auto;
+    }
+
+    @media (min-width: 800px) {
+    #grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+      margin-left: 10rem;
+      margin-right: 10rem;
+      margin-top: 5rem;
+      margin-bottom: 2rem;
+    }
+    
+.grid-container .arrow {
+  position: absolute;
+  top: 80%;
+  transform: translateY(-50%);
+  color: black;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 50px;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+#grid-container .arrow.left {
+  left: 10px;
+}
+
+#grid-container .arrow.right {
+  right: 10px;
+}
+    }
+  </style>
