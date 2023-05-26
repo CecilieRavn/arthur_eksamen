@@ -1,3 +1,6 @@
+---
+import "../styles/mutual.css"
+---
 <header>
   <div class="navigation_wrap">
     <a class="logoname" href="/">ARTHUR AIZIKOVICH</a>
@@ -70,8 +73,8 @@
     cursor: pointer;
     height: 27px;
     width: 27px;
-    z-index: 2;
-    position: fixed;
+    z-index: 10;
+    position: absolute;
     top: 0px;
     right: 30px;
   }
@@ -86,6 +89,7 @@
     position: absolute;
     transition: 0.3s ease-in-out;
     content: "";
+    z-index: 10;
   }
   #burger-menu span:before {
     left: 0px;
@@ -123,7 +127,7 @@
     background: #fff;
   }
   #menu {
-    z-index: 1;
+    z-index: 10;
     min-width: 100%;
     min-height: 100%;
     position: fixed;
@@ -142,6 +146,7 @@
     opacity: 1;
     padding-top: 10%;
     background: #090909c6;
+    z-index: 10;
   }
   #menu ul {
     padding: 0;
@@ -158,6 +163,7 @@
     text-decoration: none;
     font-family: "Tekst";
     text-align: center;
+    z-index: 20;
   }
 
   #menu a:hover {
