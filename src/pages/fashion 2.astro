@@ -54,6 +54,15 @@ import Category from "../components/Category.astro";
         grid-gap: 10px;
         margin: 20%;
       }
+
+      img {
+    transition:transform 0.25s ease;
+}
+
+img:hover {
+    -webkit-transform:scale(1.5); /* or some other value */
+    transform:scale(1.5);
+}
       @media (max-width: 700px){
         #image{
           width: 100px;
