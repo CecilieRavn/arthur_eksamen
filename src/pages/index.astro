@@ -54,7 +54,8 @@ img{
   flex-direction: column;
   justify-content: flex-end;
   padding: 20px;
-  animation: fadeAnimation 50s ease-in-out;
+  transition: fadeAnimation 50s ease-in-out;
+  
   
 }
 
@@ -135,9 +136,9 @@ h2 {
 }
 
 @keyframes fadeAnimation {
-  0%, 20% { opacity: 1; }
-  25%, 95% { opacity: 0; }
-  100% { opacity: 1; }
+  0%, 25% { opacity: 5; }
+  45%, 65% { opacity: 10; }
+  100% { opacity: 5; }
 }
 
 
