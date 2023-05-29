@@ -10,8 +10,11 @@ import Mobilmenu from "../components/Mobilmenu.astro";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <meta name="description" content="My name is Arthur Aizikovich and I'm a Copenhagen-based photographer,
-    originally from Latvia."/>
+    <meta
+      name="description"
+      content="My name is Arthur Aizikovich and I'm a Copenhagen-based photographer,
+    originally from Latvia."
+    />
     <link rel="icon" type="image/x-icon" href="logo.svg" />
     <title>About</title>
   </head>
@@ -19,10 +22,10 @@ import Mobilmenu from "../components/Mobilmenu.astro";
     <main>
       <Mobilmenu />
       <div class="videobox">
-      <video loop autoplay muted >
-        <source src="/arthurvideomute.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+        <video loop autoplay muted>
+          <source src="/arthurfade.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </div>
       <h2>Something about myself</h2>
       <p>
@@ -57,7 +60,6 @@ import Mobilmenu from "../components/Mobilmenu.astro";
         the near future.
       </p>
 
-
       <Footer />
 
       <style>
@@ -82,7 +84,7 @@ import Mobilmenu from "../components/Mobilmenu.astro";
         h2 {
           text-decoration: underline;
           text-decoration-thickness: 2px;
-          text-underline-offset: 8px; 
+          text-underline-offset: 8px;
           font-family: "Overskrift";
           font-weight: lighter;
           margin-top: 70px;
@@ -115,8 +117,6 @@ import Mobilmenu from "../components/Mobilmenu.astro";
             width: 90%;
           }
         }
-
-       
       </style>
     </main>
   </body>
