@@ -30,13 +30,39 @@ import "../styles/mutual.css";
 </div>
 
 <style>
-  .grid-container {
+@media (min-width: 700px) {
+    .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: auto;
     align-content: center;
     max-width: 600px;
   }
+  img {
+    width: 150px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+    .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+    align-content: center;
+    max-width: 400px;
+  }
+
+  img {
+    width: 100px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+
+}
 
   .container img {
     transition: transform 0.3s ease;
@@ -50,12 +76,6 @@ import "../styles/mutual.css";
     justify-items: center;
   }
 
-  img {
-    width: 200px;
-    margin-right: 20px;
-    margin-left: 20px;
-    margin-top: 40px;
-  }
   .container img {
     transform: 0.3s ease;
   }
