@@ -3,6 +3,7 @@ import "../styles/mutual.css";
 import Menu from "../components/Menu.astro";
 import Footer from "../components/Footer.astro";
 import Gallerifiks from "../components/Gallerifiks.astro";
+import Galleri from "../components/Galleri.astro";
 ---
 
 <html lang="en">
@@ -31,10 +32,11 @@ import Gallerifiks from "../components/Gallerifiks.astro";
         </div>
       </header>
       <h2 class="centering">Fascinated by people</h2>
-      <section id="section">
+      <!--<section id="section">
         <Gallerifiks />
-      </section>
+      </section>-->
 
+      <Galleri/>
       <Footer />
       <script src="../scripts/script.js"></script>
       <script src="../scripts/burger.js"></script>
@@ -134,6 +136,7 @@ import Gallerifiks from "../components/Gallerifiks.astro";
           margin-top: 100px;
           font-family: Overskrift;
         }
+        
 
         @keyframes fadeAnimation {
           0%,
