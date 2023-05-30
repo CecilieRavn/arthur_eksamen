@@ -1,0 +1,139 @@
+---
+import "../styles/mutual.css";
+---
+
+<div class="gallery">
+  <div class="container">
+    <img
+      src="/galleri1.webp"
+      class="thumbnail"
+      height="100"
+      width="100"
+      alt="Events"
+    />
+    <h2 class="thumbnail">Events</h2>
+    <div class="ps">
+      <a href="events" class="galleriLink">Events</a>
+    </div>
+  </div>
+  <div class="container">
+    <img
+      src="/galleri2.webp"
+      class="thumbnail"
+      height="100"
+      width="100"
+      alt="Fashion"
+    />
+    <h2 class="thumbnail">Fashion</h2>
+    <div class="ps">
+      <a href="fashion" class="galleriLink">Fashion</a>
+    </div>
+  </div>
+  <div class="container">
+    <img
+      src="/galleri3.webp"
+      class="thumbnail"
+      height="100"
+      width="100"
+      alt="Portraits"
+    />
+    <h2 class="thumbnail">Portraits</h2>
+    <div class="ps">
+      <a href="portrait" class="galleriLink">Portraits</a>
+    </div>
+  </div>
+  <div class="container">
+    <img
+      src="/galleri4.webp"
+      class="thumbnail"
+      height="100"
+      width="100"
+      alt="Wedding"
+    />
+    <h2>Wedding</h2>
+    <div class="ps">
+      <a href="wedding" class="galleriLink">Wedding</a>
+    </div>
+  </div>
+</div>
+
+<style>
+  .galleriLink {
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+    font-family: "Overskrift";
+  }
+
+  .gallery .container h2 {
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+    font-family: "Overskrift";
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+    gap: 14%;
+    padding-bottom: 10px;
+    padding-left: 30%;
+    padding-right: 30%;
+  }
+  .gallery img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .container {
+    display: grid;
+    place-items: center;
+  }
+  .container img,
+  .container .ps,
+  .container h2 {
+    grid-area: 1/1;
+    transition: 0.3s;
+  }
+
+  .container h2 {
+    font-size: 50px;
+    color: black;
+    font-family: sans-serif;
+    font-weight: 500;
+    place-items: center;
+    text-align: center;
+  }
+
+  .container p {
+    font-size: 20px;
+    color: black;
+    font-family: sans-serif;
+    font-weight: 500;
+    place-self: center;
+    text-align: center;
+  }
+  .container .ps {
+    opacity: 0;
+    z-index: 3;
+  }
+  .container img {
+    opacity: 50%;
+  }
+  .container h2 {
+    z-index: 3;
+  }
+  .container:hover h2 {
+    opacity: 0;
+  }
+  .container:hover .ps {
+    opacity: 1;
+    display: block;
+  }
+
+  .container:hover img {
+    transform: scale(1.1);
+    opacity: 10%;
+  }
+</style>
