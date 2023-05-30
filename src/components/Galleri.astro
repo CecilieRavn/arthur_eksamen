@@ -2,97 +2,94 @@
 import "../styles/mutual.css";
 ---
 
-
 <div class="grid-container">
-    <div class="container">
-        <a href="events"><img src="/galleri1.webp" alt="events"></a>
-        <a href="evnts">
-            <div class="centered">Events</div>
-        </a>
-      
-    </div>
-    <div class="container">
-        <a href="fashion"><img src="/galleri2.webp" alt="fashion"></a>
-        <a href="fashion">
-            <div class="centered">Fashion</div>
-        </a>
-    </div>
-    <div class="container">
-        <a href="portrait"><img src="/galleri3.webp" alt="portrait"></a>
-        <a href="portrait">
-            <div class="centered">Portrait</div>
-        </a>
-    </div>
-    <div class="container">
-        <a href="wedding"><img src="/galleri4.webp" alt="wedding"></a>
-        <a href="wedding">
-            <div class="centered">Wedding</div>
-        </a>
-    </div>
+  <div class="container">
+    <a href="events"><img src="/galleri1.webp" alt="events" /></a>
+    <a href="events">
+      <div class="centered">Events</div>
+    </a>
+  </div>
+  <div class="container">
+    <a href="fashion"><img src="/galleri2.webp" alt="fashion" /></a>
+    <a href="fashion">
+      <div class="centered">Fashion</div>
+    </a>
+  </div>
+  <div class="container">
+    <a href="portrait"><img src="/galleri3.webp" alt="portrait" /></a>
+    <a href="portrait">
+      <div class="centered">Portrait</div>
+    </a>
+  </div>
+  <div class="container">
+    <a href="wedding"><img src="/galleri4.webp" alt="wedding" /></a>
+    <a href="wedding">
+      <div class="centered">Wedding</div>
+    </a>
+  </div>
 </div>
 
 <style>
-        .grid-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        margin: auto;
-        align-content: center;
-        max-width: 600px; 
-    } 
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+    align-content: center;
+    max-width: 600px;
+  }
 
-    .container img {
-        transition: transform 0.3s ease;
-    }
+  .container img {
+    transition: transform 0.3s ease;
+  }
 
-    .container img:hover {
-        transform: scale(1.2);
-    }
-    
+  .container img:hover {
+    transform: scale(1.2);
+  }
 
-    .grid-container {
-       justify-items: center; 
-    }
+  .grid-container {
+    justify-items: center;
+  }
 
+  img {
+    width: 200px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 40px;
+  }
+  .container img {
+    transform: 0.3s ease;
+  }
+
+  .container img:hover {
+    transform: scale(1.2);
+  }
+
+  .container {
+    text-align: center;
+    color: #black;
+    overflow: hidden;
+  }
+
+  img:hover {
+    opacity: 20%;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--brand-color);
+  }
+
+  .centered {
+    position: relative;
+    top: -45%;
+    font-family: "Overskrift";
+    font-weight: 600;
+    font-size: var(--font-xs);
+  }
+
+  @media (max-width: 500px) {
     img {
-        width: 200px;
-        margin-right: 20px;
-        margin-left: 20px;
-        margin-top: 40px;
+      margin-top: 15px;
     }
-    .container img {
-        transform: 0.3s ease;
-    }
-
-     .container img:hover {
-        transform: scale(1.2);
-    }
-
-    .container {
-        text-align: center; 
-        color: #black;
-        overflow: hidden;
-    }
-
-    img:hover {
-        opacity: 40%;
-    }
-
-    a {
-        text-decoration: none;
-        color: var(--brand-color)
-    }
-
-    .centered {
-        position: relative;
-        top: -45%;
-        font-family: "Overskrift";
-        font-weight: 600;
-        font-size: var(--font-xs);
-    }
-
-    @media (max-width: 500px) {
-        img {
-            margin-top: 15px;
-        }
-    }
+  }
 </style>
